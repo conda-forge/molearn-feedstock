@@ -1,5 +1,5 @@
 {% set name = "molearn" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Degiacomi-Lab/molearn/archive/v{{ version }}.tar.gz
-  sha256: 1512735b171b6f1550b924ecbc4ddb30ba54352af0bab7bbdba1dc4852edc550
+  sha256: 4b573b124d0bd5b78ef308e220814d09add2d199c2b859f7376e3784583e6e37
 
 build:
   number: 0
@@ -50,6 +50,6 @@ about:
   dev_url: https://github.com/Degiacomi-Lab/molearn
 
 extra:
-    recipe-maintainers:
-        - SCMusson
-        - degiacom
+  recipe-maintainers:
+    - SCMusson
+    - degiacom
