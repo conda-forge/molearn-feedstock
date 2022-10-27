@@ -51,6 +51,6 @@ about:
   dev_url: https://github.com/Degiacomi-Lab/molearn
 
 extra:
-    recipe-maintainers:
-        - SCMusson
-        - degiacom
+  recipe-maintainers:
+    - SCMusson
+    - degiacom
