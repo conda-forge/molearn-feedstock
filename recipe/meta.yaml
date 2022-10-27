@@ -1,5 +1,5 @@
 {% set name = "molearn" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Degiacomi-Lab/molearn/archive/v{{ version }}.tar.gz
-  sha256: 1512735b171b6f1550b924ecbc4ddb30ba54352af0bab7bbdba1dc4852edc550
+  sha256: 4b6ff37271e181250450164756fd0ea1fd0e3dae0e4a03adc1cc81cb613f83f5
 
 build:
   number: 0
@@ -25,6 +25,7 @@ requirements:
     - numpy
     - pytorch
     - biobox
+    - openmmtorchplugin
 test:
   imports:
     - molearn
