@@ -1,11 +1,11 @@
-About molearn
-=============
+About molearn-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/molearn-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Degiacomi-Lab/molearn
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/molearn-feedstock/blob/main/LICENSE.txt)
 
 Summary: Molearn contains methods to train neural networks on ensembles of molecular conformations
 
