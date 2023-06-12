@@ -10,18 +10,18 @@ source:
   sha256: 464d912c32fb9bc23ca2bfde4649f687ee5c3a09d67ac0fd8f1ca74bb82a26d4
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
-  noarch: python
+  skip: True  # [not linux and py<36]
 
 requirements:
   host:
-    - python >=3.6
+    - python
     - setuptools
     - pip
   run:
     - __unix
-    - python >=3.6
+    - python
     - numpy
     - pytorch
     - biobox
