@@ -1,5 +1,5 @@
 {% set name = "molearn" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/Degiacomi-Lab/molearn/archive/v{{ version }}.tar.gz
-  sha256: 464d912c32fb9bc23ca2bfde4649f687ee5c3a09d67ac0fd8f1ca74bb82a26d4
+  sha256: b2e863f7991c24dbc0172e4c6730bcc1c6d5e71fae98c493ea5f5f09ba05a9c9
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  skip: True  # [not linux and py<36]
+  skip: true  # [not linux and py<36]
 
 requirements:
   host:
