@@ -12,7 +12,7 @@ source:
 build:
   number: 2
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [not linux and py<36]
+  skip: true  # [not linux]
 
 requirements:
   host:
@@ -23,9 +23,9 @@ requirements:
     - __unix
     - python
     - numpy
-    - pytorch  # [not linux]
+    - pytorch
     - biobox
-    - openmmtorchplugin 1.1.3  # [not linux]
+    - openmmtorchplugin 1.1.3
 test:
   imports:
     - molearn
@@ -34,7 +34,7 @@ test:
   commands:
     - pip check
     - cd test
-    - python example_script.py  # [not linux]
+    - python example_script.py
   requires:
     - pip
 
